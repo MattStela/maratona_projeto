@@ -1,3 +1,5 @@
+import { fonts } from "./src/app/configs"; // Certifique-se de que o caminho está correto
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: fonts.mono,
+        unique: fonts.unique
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
