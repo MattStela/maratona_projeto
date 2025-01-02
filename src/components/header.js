@@ -90,8 +90,9 @@ export default function Header() {
         <div className="h-full w-[20%] flex-grow flex flex-col justify-center items-center"></div>
       </div>
       <br />
-      <div className="informativo h-[30%] flex items-center justify-center w-[80%] ">
-        <p>Clima hoje em SP: {temperaturaSP !== null ? `${temperaturaSP}` : "Carregando..."}ºC - Itaquera: {temperaturaItaquera !== null ? `${temperaturaItaquera}` : "Carregando..."}ºC</p>
+      <div className="informativo h-[30%] flex flex-col items-center justify-center w-[80%] text-center">
+        <p>Clima hoje em SP: {temperaturaSP !== null ? `${temperaturaSP}` : "Carregando..."}ºC</p>
+        <p>Itaquera: {temperaturaItaquera !== null ? `${temperaturaItaquera}` : "Carregando..."}ºC</p>
       </div>
     </div>
   );
