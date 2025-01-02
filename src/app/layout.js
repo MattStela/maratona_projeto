@@ -6,7 +6,7 @@ import Footer from '@/components/footer';
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center pt-10">
+    <div className="bg-black min-h-screen flex flex-col justify-center items-center pt-10">
       <Header/>
       {children}
       <Footer/>
