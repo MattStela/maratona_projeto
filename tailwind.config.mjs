@@ -2,6 +2,7 @@ import { fonts } from "./src/app/configs"; // Certifique-se de que o caminho est
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: 'jit',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
