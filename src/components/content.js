@@ -20,7 +20,7 @@ const Content = ({ title, content }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
       <div className="px-6 py-4 flex flex-col items-center justify-center text-center">
-        <p className="font-bold text-base mb-2">{title}</p>
+        <p className="font-bold text-base mb-2 text-white">{title}</p>
         <p className="text-base">{formattedContent}</p>
       </div>
     </div>
