@@ -77,7 +77,7 @@ export default function Graficos() {
             {
               label: "Umidade SP",
               data: humiditySP,
-              borderColor: "rgb(4, 169, 251)",
+              borderColor: "rgb(0, 52, 79)",
               backgroundColor: "rgba(75, 75, 192, 0.2)",
               fill: true,
               borderWidth: 2,
@@ -86,7 +86,7 @@ export default function Graficos() {
             {
               label: "Umidade Itaquera",
               data: humidityItaquera,
-              borderColor: "rgb(2, 94, 255)",
+              borderColor: "rgb(0, 54, 148)",
               backgroundColor: "rgba(153, 153, 255, 0.2)",
               fill: true,
               borderWidth: 2,
