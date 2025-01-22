@@ -56,6 +56,7 @@ export default function Graficos() {
               borderColor: "rgb(240, 69, 43)",
               backgroundColor: "rgba(77, 0, 0, 0.2)",
               fill: true,
+              borderWidth: 2,
               yAxisID: 'y-temp',
             },
             {
@@ -64,6 +65,7 @@ export default function Graficos() {
               borderColor: "rgb(255, 161, 10)",
               backgroundColor: "rgba(153, 102, 255, 0.2)",
               fill: true,
+              borderWidth: 2,
               yAxisID: 'y-temp',
             },
           ],
@@ -78,6 +80,7 @@ export default function Graficos() {
               borderColor: "rgb(4, 169, 251)",
               backgroundColor: "rgba(75, 75, 192, 0.2)",
               fill: true,
+              borderWidth: 2,
               yAxisID: 'y-humidity',
             },
             {
@@ -86,6 +89,7 @@ export default function Graficos() {
               borderColor: "rgb(2, 94, 255)",
               backgroundColor: "rgba(153, 153, 255, 0.2)",
               fill: true,
+              borderWidth: 2,
               yAxisID: 'y-humidity',
             },
           ],
