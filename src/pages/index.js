@@ -31,7 +31,7 @@ const Plano = () => {
         description: "A rota de 10km com os pontos de parada a cada 1km",
         imageUrl: "/images/map.png", // URL da imagem local
         tags: ["Junho"],
-        link: "https://www.google.com.br/maps/dir/R.+Noroguages,+211+-+Itaquera,+S%C3%A3o+Paulo+-+SP,+08215-670,+Brasil/-23.5565399,-46.4462129/-23.5620404,-46.450605/-23.5632773,-46.460745/-23.5657733,-46.4678866/-23.5714655,-46.4662935/-23.572307,-46.4647265/-23.5782374,-46.4588428/-23.5700831,-46.4593192/-23.561991,-46.4508039/@-23.5645671,-46.4589294,14.75z/data=!4m17!4m16!1m5!1m1!1s0x94ce67d77cbe9339:0x418829ed82fc01c6!2m2!1d-46.4431479!2d-23.5499751!1m0!1m0!1m0!1m0!1m0!1m0!1m0!1m0!1m0!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+        link: "https://www.google.com.br/maps/dir/-23.5498493,-46.4432171/-23.551125,-46.4366069/-23.53922,-46.4312334/-23.5353255,-46.428665/-23.5509401,-46.4365379/-23.5498414,-46.4431264/@-23.5443589,-46.436508,15z/data=!4m2!4m1!3e2?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D"
       }
     
   ];

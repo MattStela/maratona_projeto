@@ -1,6 +1,7 @@
 // grafico.js
 import { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -134,6 +135,7 @@ export default function Graficos() {
 
   return (
     <div className="flex justify-center items-center relative w-full">
+
       {forecastDataHumidity && forecastDataTemp && (
         <div className="w-[90%]">
           <Line className="w-full" data={{
@@ -145,7 +147,9 @@ export default function Graficos() {
           }} options={options} />
         </div>
       )}
+      
       {!forecastDataTemp && !forecastDataHumidity && <p>Carregando dados de previsão...</p>}
+
     </div>
   );
 }
