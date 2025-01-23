@@ -1,7 +1,6 @@
 // grafico.js
 import { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
-
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -57,7 +56,7 @@ export default function Graficos() {
               borderColor: "rgb(240, 69, 43)",
               backgroundColor: "rgba(77, 0, 0, 0.2)",
               fill: true,
-              borderWidth: 2,
+              borderWidth: 1,
               yAxisID: 'y-temp',
             },
             {
@@ -66,7 +65,7 @@ export default function Graficos() {
               borderColor: "rgb(255, 161, 10)",
               backgroundColor: "rgba(153, 102, 255, 0.2)",
               fill: true,
-              borderWidth: 2,
+              borderWidth: 1,
               yAxisID: 'y-temp',
             },
           ],
@@ -81,7 +80,7 @@ export default function Graficos() {
               borderColor: "rgb(0, 52, 79)",
               backgroundColor: "rgba(75, 75, 192, 0.2)",
               fill: true,
-              borderWidth: 2,
+              borderWidth: 1,
               yAxisID: 'y-humidity',
             },
             {
@@ -90,7 +89,7 @@ export default function Graficos() {
               borderColor: "rgb(0, 54, 148)",
               backgroundColor: "rgba(153, 153, 255, 0.2)",
               fill: true,
-              borderWidth: 2,
+              borderWidth: 1,
               yAxisID: 'y-humidity',
             },
           ],
@@ -106,7 +105,7 @@ export default function Graficos() {
   const options = {
     plugins: {
       legend: {
-        display: true,
+        display: false,
       },
       tooltip: {
         mode: 'index',
@@ -119,13 +118,15 @@ export default function Graficos() {
       },
       'y-temp': {
         type: 'linear',
-        display: false,
+        display: true,
         position: 'left',
+
       },
       'y-humidity': {
         type: 'linear',
-        display: false,
+        display: true,
         position: 'right',
+
         grid: {
           drawOnChartArea: false, // only want the grid lines for one axis
         },
@@ -134,11 +135,10 @@ export default function Graficos() {
   };
 
   return (
-    <div className="flex justify-center items-center relative w-full">
-
+    <div className="flex justify-center items-center relative w-full h-[600px]">
       {forecastDataHumidity && forecastDataTemp && (
-        <div className="w-[90%]">
-          <Line className="w-full" data={{
+        <div className="flex justify-center items-center w-[90%] h-[600px]">
+          <Line className="w-full h-[600px]" data={{
             labels: forecastDataTemp.labels,
             datasets: [
               ...forecastDataTemp.datasets,
@@ -147,9 +147,7 @@ export default function Graficos() {
           }} options={options} />
         </div>
       )}
-      
       {!forecastDataTemp && !forecastDataHumidity && <p>Carregando dados de previsão...</p>}
-
     </div>
   );
 }

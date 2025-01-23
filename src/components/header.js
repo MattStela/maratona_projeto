@@ -11,6 +11,7 @@ export default function Header() {
   return (
     <div className="w-full flex flex-col items-center justify-center text-gray-400">
       <div className="menu flex flex-row items-center justify-center w-full">
+        
         <div className="h-full w-[20%] flex-grow flex flex-col justify-center items-center">
           <Image
             src="/images/logo-no-bg.png"
@@ -20,7 +21,8 @@ export default function Header() {
             className="object-contain"
           />
         </div>
-        <div className="h-full w-[60%] flex-grow flex flex-col justify-center items-center">
+        
+        <div className="h-full w-[30%] flex-grow flex flex-col justify-center items-center">
           <Link
             href="/#"
             className="hover:text-white text-gray-500 font-semibold py-2 px-4 rounded transition duration-300"
@@ -28,12 +30,19 @@ export default function Header() {
             Início
           </Link>
         </div>
+        <div className="h-full w-[30%] flex-grow flex flex-col justify-center items-center">
+          <Link
+            href="/climatempo"
+            className="hover:text-white text-gray-500 font-semibold py-2 px-4 rounded transition duration-300"
+          >
+            climatempo
+          </Link>
+        </div>
+
         <div className="h-full w-[20%] flex-grow flex flex-col justify-center items-center"></div>
       </div>
       <br />
-      <div className="m-10 informativo flex flex-col items-center justify-center w-full text-center">
-        <Graficos />
-      </div>
+      
     </div>
   );
 }
